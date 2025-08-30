@@ -55,7 +55,7 @@
 
         // Send data to server
         axios
-          .post("http://192.168.43.188:8080/Jobs/postJobs", data)
+          .post("http://ec2-50-16-176-155.compute-1.amazonaws.com:8080/Jobs/postJobs", data)
           .then((response) => {
             console.log("Response:", response.data);
             document.getElementById("output").textContent = JSON.stringify(
